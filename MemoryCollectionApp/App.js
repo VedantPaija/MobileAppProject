@@ -1,12 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import AppButton from './App/assets/components/AppButton';
 import AppColours from './App/assets/config/AppColours';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <AppButton title="Click here"></AppButton>
     </View>
   );
 }
@@ -14,7 +13,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: AppColours.primaryColour,
+    backgroundColor: AppColours.DutchWhite,
     alignItems: 'center',
     justifyContent: 'center',
   },
